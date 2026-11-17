@@ -1,4 +1,4 @@
-# The Sketching Gap: data and prompts
+# The Sketching Gap: Rethinking Sketch AI Through Illustration Practice
 
 Companion repository for the article **The Sketching Gap: Rethinking Sketch AI Through Illustration Practice** by Zeynep Begüm Kara and T. Metin Sezgin (Koç University). The article is currently under review.
 
