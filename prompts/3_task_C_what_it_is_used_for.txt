@@ -1,0 +1,31 @@
+TASK C — WHAT KIND OF RELATION TO PRACTICE
+
+Provisional Task A and Task B records are given after the paper. Check against the paper itself.
+The line QUESTIONS_TO_ANSWER lists which questions apply to this paper. For every question NOT listed, set _quote to NONE, _page to NONE and _answer to NOT_APPLICABLE.
+
+For EACH listed question fill three fields, IN THIS ORDER:
+_quote: copy a SHORT passage (at most 20 words) WORD FOR WORD from the paper that supports your answer. No paraphrase, no "...". If nothing supports an answer, write NONE and answer UNCLEAR.
+_page: the number of the PAGE marker where the quote appears, or NONE.
+_answer: one of the options listed.
+
+C1_Search_Purpose: What is the sketch-based search for?
+  FIND_KNOWN_ITEM: the person has a particular item in mind and the system should find it.
+  EXPLORE_OR_COMPARE: the search helps the person look around, compare several references, or develop what they are looking for.
+  UNCLEAR.
+C2_Unfinished_Drawing: How does the system treat what is not yet decided in the drawing?
+  INTERPRETS_EARLY: it recognises or classifies the drawing before it is finished.
+  OFFERS_EDITABLE_OR_REVERSIBLE: it suggests completions or refinements that the person can accept, edit, undo or choose between.
+  RESOLVES_AUTOMATICALLY: it completes or finalises the drawing or result in one step, without the person choosing.
+  UNCLEAR.
+C3_Earlier_Material_Use: What is earlier sketch material used for?
+  UNDO_OR_REVERT: going back to fix or reverse steps in the current work.
+  COMPARE_OR_REVISIT: looking at earlier states or sketches again, or comparing them.
+  REUSE_IN_NEW_WORK: taking earlier sketches or parts of them into new work.
+  UNCLEAR.
+C4_Exchange_Between_People: What kind of exchange happens between people through sketches?
+  CO_CREATION: people draw or develop sketches together.
+  FEEDBACK_REVIEW_APPROVAL: one person comments on, reviews, requests changes to, or approves another's sketch.
+  COMMUNICATION_COORDINATION: sketches are used to share information or coordinate action, not to develop the drawing itself.
+  UNCLEAR.
+
+Paper_ID must equal PAPER_ID. Return JSON only.

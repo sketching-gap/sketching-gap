@@ -1,0 +1,38 @@
+TASK A — WHAT THE SYSTEM DOES WITH THE SKETCH
+
+Code the paper's FOCAL contribution: the system, model or method the paper proposes. Ignore training datasets, preprocessing steps, baselines, and secondary features.
+
+First write three short plain descriptions in your own words:
+Principal_Input: what goes into the focal system.
+Principal_Operation: what the system does.
+Principal_Output: what comes out.
+Principal_Page: the page number (from the PAGE markers) where this is best described.
+
+Then answer eight questions. For EACH question fill three fields, IN THIS ORDER:
+_quote: copy a SHORT passage (at most 20 words) WORD FOR WORD from the paper that supports your answer. Do not paraphrase, shorten with "...", or join separate sentences. If no passage supports a YES, write NONE.
+_page: the number of the PAGE marker where the quote appears, or NONE.
+_answer: YES, NO, or NOT_REPORTED.
+Answer YES only if your quote clearly states it. Answer NO if the paper shows it is not the case. Answer NOT_REPORTED if the paper does not say.
+
+A1_Sketch_Input: A person's sketch or drawing (hand-drawn on paper or drawn digitally) is an input to the focal system.
+A2_New_Sketch_Output: The principal output is a NEW sketch or line drawing produced by the system, for example a photo turned into a sketch, or sketches generated from noise or text.
+A3_Modified_Same_Sketch: The principal output is a cleaned, completed, vectorised, beautified, simplified, coloured, stylised or otherwise modified version of the SAME input sketch.
+A4_Retrieves_Existing: The system returns items that ALREADY EXIST in a collection or database (images, photos, 3D models, sketches, designs) that match the sketch.
+A5_Builds_3D_Or_Geometry: The principal output is a 3D model, CAD or geometric model, surface, or spatial structure constructed from the sketch.
+A6_New_Image_Or_Content: The principal output is newly generated content that is not a sketch and not 3D geometry, for example a realistic image, animation, simulation, texture or layout.
+A7_Label_Or_Interpretation: The principal output is a label, class, parse, segmentation, recognised symbols, recognised diagram, or other interpretation of the sketch.
+A8_Drawing_As_Command: Drawing mainly serves as a command or control for another process, for example gestures that trigger actions or sketched paths that steer a robot.
+
+Finally give your own overall choice, using the definitions below. These are a cross-check; the questions above matter most.
+Task_Direct: RECOGNITION_UNDERSTANDING (labels, parsing, interpretation of a sketch), RETRIEVAL (finds existing material), GENERATION (new images or new sketches), PROCESSING_ENHANCEMENT (modified version of the same sketch), MODELLING_RECONSTRUCTION (3D or geometric model), INTERACTION_CONTROL (drawing as commands), OTHER.
+Role_Direct: RECOGNITION_TARGET (the sketch is what gets identified), RETRIEVAL_QUERY (the sketch is a search query), CONDITION_OR_PROMPT (the sketch guides a new image or content), PARTIAL_SPECIFICATION (an incomplete sketch specifies a target that the system develops further), GEOMETRIC_CONSTRAINT (the sketch gives shape or position for geometry), INTERACTIVE_WORKSPACE (ongoing drawing is where system and person keep responding to each other), INTERMEDIATE_REPRESENTATION (sketch-like material links internal stages), GENERATED_OUTPUT (the system produces a new sketch), TRANSFORMED_OUTPUT (the system modifies the same sketch), OTHER, UNCLEAR.
+
+COMMON TRAPS
+- Photo in, sketch out: A2 is YES, A1 is usually NO.
+- Sketch in, realistic image out: A6 is YES. It is not retrieval unless existing images are returned.
+- Sketch-based image retrieval returning a ranked list: A4 is YES.
+- Sketch in, 3D model out: A5 is YES even if strokes are recognised internally.
+- Rough sketch in, clean lines of the same drawing out: A3 is YES.
+- A classifier that recognises strokes as a step inside another system: A7 is NO unless the label is the principal output.
+
+Paper_ID must equal PAPER_ID. Return JSON only.

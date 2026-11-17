@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite them as below."
+title: "The Sketching Gap: data and prompts"
+type: dataset
+authors:
+  - family-names: Kara
+    given-names: Zeynep Begüm
+    orcid: "https://orcid.org/0009-0003-0450-1806"
+    affiliation: Koç University
+  - family-names: Sezgin
+    given-names: T. Metin
+    orcid: "https://orcid.org/0000-0002-1524-1646"
+    affiliation: Koç University
+year: 2026
+url: "https://zbegum.github.io/sketching-gap.html"
+license: CC-BY-4.0

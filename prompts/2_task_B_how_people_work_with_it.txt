@@ -1,0 +1,44 @@
+TASK B — HOW PEOPLE WORK WITH THE SYSTEM
+
+A provisional Task A record is given after the paper. Check everything against the paper itself.
+
+First write Workflow_Summary: two or three plain sentences describing who does what with the focal system, in order.
+
+Then answer the questions. For EACH question fill three fields, IN THIS ORDER:
+_quote: copy a SHORT passage (at most 20 words) WORD FOR WORD from the paper that supports your answer. Do not paraphrase, shorten with "...", or join separate sentences. If no passage supports a YES, write NONE.
+_page: the number of the PAGE marker where the quote appears, or NONE.
+_answer: as listed for that question.
+Answer YES only if your quote clearly states it. Answer NO if the paper shows it is not the case, including when the reported workflow is fully automatic. Answer NOT_REPORTED if the paper does not say.
+
+B01_Person_Uses_System (YES/NO/NOT_REPORTED): The paper describes a person directly using the focal system: drawing into it and receiving its results. People who only drew the training or test data, or who only rated outputs afterwards, do NOT count.
+B02_Several_People_Same_Workflow (YES/NO/NOT_REPORTED): Two or more people take part in the SAME sketching workflow, for example drawing together, sharing sketches, or reviewing each other's sketches. Several study participants working separately do NOT count.
+B03_Responds_While_Drawing (YES/NO/NOT_REPORTED): The system acts on the drawing while the person is still drawing, updating its response as strokes are added.
+B04_Designed_For_Incomplete_Sketch (YES/NO/NOT_REPORTED): The system is explicitly designed to take an unfinished or partial sketch as input.
+B05_Person_Acts_On_Result (YES/NO/NOT_REPORTED): After the system shows a result, the person responds to that result (edits, redraws, selects, corrects or refines) and the system responds again. Loops inside an algorithm, training iterations, or running a model on many test sketches do NOT count.
+B06_Loop_Purpose (CORRECT_OR_CONFIRM / REFINE_TOWARDS_TARGET / EXPLORE_ALTERNATIVES / NOT_APPLICABLE / UNCLEAR): Only if B05 is YES, otherwise NOT_APPLICABLE.
+  CORRECT_OR_CONFIRM: the system interprets or checks the drawing and the person fixes or confirms it.
+  REFINE_TOWARDS_TARGET: the person adjusts the sketch or result step by step towards a result they already intend.
+  EXPLORE_ALTERNATIVES: the system offers new, different or divergent material that the person can take up, compare or recombine.
+B07_Undo_History_Versions (YES/NO/NOT_REPORTED): The person can undo, view a history, or return to earlier versions of the SAME piece of work.
+B08_Own_Earlier_Sketches (YES/NO/NOT_REPORTED): The person can save, load, browse or reuse their OWN earlier separate sketches. A search database of other people's sketches does NOT count.
+B09_Kept_Beyond_Session (YES/NO/NOT_REPORTED): Sketch material is stored so that it can be used in a later session, not only during the current one.
+B10_Several_Results_Shown (YES/NO/NOT_REPORTED): For one input, the person is shown several alternative results, candidates or interpretations, including a ranked list.
+B11_Separate_Branches_Kept (YES/NO/NOT_REPORTED): Two or more separate development paths from a common earlier state are kept, each available for further work.
+B12_Evaluation_With_People (YES/NO/NOT_REPORTED): The paper reports a study in which people used or judged the system: user study, participants, interviews, questionnaires, workshops, or expert review.
+B13_Evaluation_Focus (USABILITY_EXPERIENCE / OUTPUT_QUALITY / TASK_PERFORMANCE / PROCESS_OF_IDEAS_OR_DRAWING / PRACTICE_DEPLOYMENT / NOT_APPLICABLE): Only if B12 is YES, otherwise NOT_APPLICABLE. Choose the MAIN thing the study with people examines.
+  USABILITY_EXPERIENCE: ease of use, satisfaction, workload, preference for the interface.
+  OUTPUT_QUALITY: how good, realistic or faithful the results look.
+  TASK_PERFORMANCE: speed or accuracy in completing a task.
+  PROCESS_OF_IDEAS_OR_DRAWING: how people's ideas or drawings developed during the activity.
+  PRACTICE_DEPLOYMENT: use in real professional or everyday practice over time.
+B14_Claims_Creative_Support (YES/NO/NOT_REPORTED): The authors explicitly claim the system supports creativity, ideation, exploration, design thinking, or artistic practice.
+B15_Artists_Or_Designers (YES/NO/NOT_REPORTED): Artists, illustrators, animators, designers or architects are the intended users or the study participants.
+
+COMMON TRAPS
+- An automatic classifier evaluated on a dataset: B01 is NO, and B05 is NO.
+- A retrieval system showing top results: B10 is YES.
+- Redrawing to make a new query without the system building on the previous result: B05 is usually NO.
+- Several participants each using the system alone: B02 is NO.
+- A model that stores features or embeddings: B07, B08 and B09 are NO unless the person can get their sketches back.
+
+Paper_ID must equal PAPER_ID. Return JSON only.
