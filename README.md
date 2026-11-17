@@ -35,17 +35,6 @@ We searched Scopus, the ACM Digital Library and IEEE Xplore on 19 July 2026 for 
 
 See the article for the full method and its checks.
 
-### Prompt files
-
-The SHA-256 hashes below match those recorded for every paper during the coding run.
-
-| File | SHA-256 |
-|---|---|
-| `0_system_prompt.txt` | `cec19feb0bd85bd4eda0ac30aa5b61947ff4883cf20ec0a9893df9365b344226` |
-| `1_task_A_what_the_system_does.txt` | `d7eccb4782e0de2af94978930e93d78d2058a3d2ccf378a5ad4abfa3158623cb` |
-| `2_task_B_how_people_work_with_it.txt` | `31a893308883ff02ea7b9612bd238154277fe4ad05cd47a25e25aed3c37362d8` |
-| `3_task_C_what_it_is_used_for.txt` | `4e57d6b0dc1c52cadda2989e6c853c219731571a8bb6605201efd323770b4448` |
-
 ## Reproducing the results
 
 ```
