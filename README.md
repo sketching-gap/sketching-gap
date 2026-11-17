@@ -2,7 +2,7 @@
 
 Companion repository for the article **The Sketching Gap: Rethinking Sketch AI Through Illustration Practice** by Zeynep Begüm Kara and T. Metin Sezgin (Koç University). The article is currently under review.
 
-Project website: https://zbegum.github.io/sketching-gap.html
+Project website: https://sketching-gap.github.io (also at https://zbegum.github.io/sketching-gap.html)
 
 ## What is here
 
@@ -50,7 +50,7 @@ The script needs only Python 3.8 or later and prints the task and role distribut
   title        = {The Sketching Gap: Rethinking Sketch AI Through Illustration Practice},
   author       = {Kara, Zeynep Begüm and Sezgin, T. Metin},
   year         = {2026},
-  howpublished = {https://zbegum.github.io/sketching-gap.html},
+  howpublished = {https://sketching-gap.github.io},
   note         = {Manuscript under review}
 }
 ```
